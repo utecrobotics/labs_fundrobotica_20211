@@ -82,12 +82,9 @@ while not rospy.is_shutdown():
 
     # Almacenamiento de datos
     fxact.write(str(t)+' '+str(x[0])+' '+str(x[1])+' '+str(x[2])+'\n')
-    fxdes.write(str(t)+' '+str(xdes[0])+' '+str(xdes[1])+' '+
-                str(xdes[2])+'\n')
-    fqact.write(str(t)+' '+str(q[0])+' '+str(q[1])+' '+ str(q[2])+
-                ' '+ str(q[3])+' '+str(q[4])+' '+str(q[5])+'\n ')
-    fqdes.write(str(t)+' '+str(qdes[0])+' '+str(qdes[1])+' '+ str(qdes[2])+
-                ' '+ str(qdes[3])+' '+str(qdes[4])+' '+str(qdes[5])+'\n ')
+    fxdes.write(str(t)+' '+str(xdes[0])+' '+str(xdes[1])+' '+str(xdes[2])+'\n')
+    fqact.write(str(t)+' '+str(q[0])+' '+str(q[1])+' '+ str(q[2])+' '+ str(q[3])+' '+str(q[4])+' '+str(q[5])+'\n ')
+    fqdes.write(str(t)+' '+str(qdes[0])+' '+str(qdes[1])+' '+ str(qdes[2])+' '+ str(qdes[3])+' '+str(qdes[4])+' '+str(qdes[5])+'\n ')
 
     # ----------------------------
     # Control dinamico (COMPLETAR)
